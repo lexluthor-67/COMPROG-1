@@ -1,17 +1,18 @@
-int main () {
+#include <stdio.h>
 
-    //TASK 1, SANA TAMA TO
+int main () {
 
     int total_score;
     int max_score;
+
     printf("================================\n");
-    printf("---STUDENT'S PERCENTAGE SCORE---\n");
+    printf("TASK 1: PERCENTAGE CALCULATOR\n");
     printf("================================\n");
 
-    printf("\nEnter Total Score : ");
+    printf("\nEnter Total Score : ");  //KUNWARE NAKUHA NIYONG SCORE 50
     scanf("%d", &total_score);
     
-    printf("Enter Max Score   : ");
+    printf("Enter Max Score   : "); //KUNG UP TO ILAN YUNG EXAM SO IF 60 Items THEN MAX SCORE IS 60
     scanf("%d", &max_score);
 
     float percentage;
