@@ -1,0 +1,23 @@
+int main () {
+
+    //TASK 1, SANA TAMA TO
+
+    int total_score;
+    int max_score;
+    printf("================================\n");
+    printf("---STUDENT'S PERCENTAGE SCORE---\n");
+    printf("================================\n");
+
+    printf("\nEnter Total Score : ");
+    scanf("%d", &total_score);
+    
+    printf("Enter Max Score   : ");
+    scanf("%d", &max_score);
+
+    float percentage;
+    percentage = (float)total_score / (float)max_score * 100;
+
+    printf("\nPERCENTAGE        : %.2f%%\n", percentage);
+
+    return 0;
+}
