@@ -1,1 +1,27 @@
+#include <stdio.h>
+#include <stdbool.h>
 
+int main(){
+
+    int age;
+    int is_student;
+    bool is_eligible;
+
+    printf("=====================================\n");
+    printf("     TASK 2: ELIGIBILITY CHECKER\n");
+    printf("=====================================\n");
+
+    printf("Enter your Age: ");
+    scanf("%d", &age);
+
+    printf("Are You a Student? 1(Yes), 0(No): ");
+    scanf("%d", &is_student);
+
+    //AT LEAST 1 DAPAT TRUE
+    is_eligible =  (is_student == 1) || (age < 18) || (age >= 60);
+
+    printf("\n--(1 = Eligible, 0 = NOT Eligible)--\n");
+    printf("ELIGIBILITY STATUS: %d\n", is_eligible);
+    
+    return 0;
+}
