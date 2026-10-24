@@ -1,1 +1,36 @@
+#include <stdio.h>
 
+int main(){
+
+int grade;
+
+    printf("=====================================\n");
+    printf("     TASK 3: GRADE CLASSIFICATION\n");
+    printf("=====================================\n");
+
+    do{
+    printf("\n\nEnter Your Grade (0-100): ");
+    scanf("%d", &grade);
+    
+    if (grade < 0 || grade > 100){
+    printf("INVALID INPUT!");
+    } }
+    while (grade < 0 || grade > 100);
+        
+    printf("\n=====================================\n");
+    printf("          GRADE AND REMARK\n");
+    printf("=====================================\n");    
+    
+    if (grade >= 90) {
+    printf("\nGRADE: %d ('A') — Remark: Excellent", grade);}
+    else if (grade >= 80) {
+    printf("\nGRADE: %d ('B') — Remark: Good Job", grade);}
+    else if (grade >= 70) {
+    printf("\nGRADE: %d ('C') — Remark: Satisfactory", grade);}
+    else if (grade >= 60) {
+    printf("\nGRADE: %d ('D') — Remark: Needs Improvement", grade);}
+    else {
+    printf("\nGRADE: %d ('F') — Remark: Failed", grade);}
+    
+    return 0;
+}
